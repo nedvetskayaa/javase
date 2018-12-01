@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="sample.Controller.Controller">
+   <top>
+      <TextField BorderPane.alignment="CENTER" fx:id="textField" >
+   </top>
+   <bottom>
+      <GridPane prefHeight="467.0" prefWidth="648.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="125.0" text="0" GridPane.rowIndex="3" onAction="#signInClicked0" fx:id="0" />
+            <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="83.0" text="1" textOverrun="CLIP" GridPane.columnIndex="1" GridPane.rowIndex="3" onAction="#signInClicked1" fx:id="1"/>
+            <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="83.0" text="2" GridPane.rowIndex="2" onAction="#signInClicked2" id="2"/>
+            <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="94.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="3" onAction="#signInClickedEqually" fx:id="="/>
+            <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="83.0" text="4" GridPane.columnIndex="2" GridPane.rowIndex="2" onAction="#signInClicked4" fx:id="4"/>
+            <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="83.0" text="7" GridPane.columnIndex="2" GridPane.rowIndex="1" onAction="#signInClicked7" fx:id="7"/>
+            <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="83.0" text="8" onAction="#signInClicked8" fx:id="8"/>
+            <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="83.0" text="5" GridPane.rowIndex="1" onAction="#signInClicked5" fx:id="5"/>
+            <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="83.0" text="9" GridPane.columnIndex="1" onAction="#signInClicked9" fx:id="9"/>
+            <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="83.0" text="6" GridPane.columnIndex="1" GridPane.rowIndex="1" onAction="#signInClicked6" fx:id="6"/>
+            <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="83.0" text="3" GridPane.columnIndex="1" GridPane.rowIndex="2" onAction="#signInClicked3" fx:id="3"/>
+            <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="65.0" text="." GridPane.columnIndex="2" GridPane.rowIndex="3" onAction="#signInClickedPoint" fx:id="."/>
+            <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="94.0" text="*" GridPane.columnIndex="3" onAction="#signInClickedMinus" fx:id="*"/>
+            <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="94.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1" onAction="#signInClickedMinus" fx:id="-"/>
+            <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="94.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="2" onAction="#signInClickedPlus" fx:id="+"/>
+            <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="94.0" text="C" GridPane.columnIndex="2" onAction="#signInClickedReset" fx:id="C"/>
+         </children>
+      </GridPane>
+   </bottom>
+</BorderPane>
